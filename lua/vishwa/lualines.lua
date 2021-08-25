@@ -1,7 +1,7 @@
 require'lualine'.setup {
   options = {
     icons_enabled = true,
-    theme = 'codedark', -- for solarized solarized_dark
+    theme = 'solarized_dark', -- for solarized solarized_dark
     component_separators = {'', ''},
     section_separators = {'', ''},
     disabled_filetypes = {}
