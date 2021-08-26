@@ -6,11 +6,13 @@ filetype plugin on
 call plug#begin('~/.config/nvim/plugged')
 " colorscheme
 Plug 'overcache/NeoSolarized'
-Plug 'christianchiarulli/nvcode-color-schemes.vim'
 Plug 'nvim-treesitter/nvim-treesitter'
 
 "LSP for language
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neovim/nvim-lspconfig'
+Plug 'kabouzeid/nvim-lspinstall'
+Plug 'nvim-lua/completion-nvim'
+Plug 'glepnir/lspsaga.nvim'
 "styling
 Plug 'hoob3rt/lualine.nvim'
 Plug 'akinsho/nvim-bufferline.lua'
