@@ -16,6 +16,7 @@ Plug 'glepnir/lspsaga.nvim'
 "styling
 Plug 'hoob3rt/lualine.nvim'
 Plug 'akinsho/nvim-bufferline.lua'
+Plug 'Yggdroot/indentLine'
 
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
