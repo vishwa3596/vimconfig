@@ -1,11 +1,12 @@
 require'lualine'.setup {
   options = {
     icons_enabled = true,
-    theme = 'solarized_dark', -- for solarized solarized_dark
-    component_separators = {'', ''},
-    section_separators = {'', ''},
+    theme = 'jellybeans', -- for solarized solarized_dark
+	section_separators = {'', ''},
+	component_separators = {'', ''},
     disabled_filetypes = {}
   },
+
   sections = {
     lualine_a = {'mode'},
     lualine_b = {'g:coc_status', 'bo:filetype'},
@@ -25,4 +26,9 @@ require'lualine'.setup {
   tabline = {},
   extensions = {}
 }
+
+local function ins_left(component)
+  table.insert(config.sections.lualine_c, component)
+end
+
 
