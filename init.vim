@@ -6,7 +6,6 @@ filetype plugin on
 call plug#begin('~/.config/nvim/plugged')
 " colorscheme
 Plug 'overcache/NeoSolarized'
-Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'joshdick/onedark.vim'
 
 

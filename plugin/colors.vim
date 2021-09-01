@@ -24,10 +24,9 @@ let g:neosolarized_italic = 0
 " try disabling this option. Default value:
 let g:neosolarized_termBoldAsBright = 1
 set background=dark
-let g:nvcode_termcolors=256
 
 syntax on
-colorscheme onedark " Or whatever colorscheme you make
+colorscheme NeoSolarized " Or whatever colorscheme you make
 
 
 " checks if your terminal has 24-bit color support
