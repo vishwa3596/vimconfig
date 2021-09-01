@@ -2,8 +2,6 @@ require'lualine'.setup {
   options = {
     icons_enabled = true,
     theme = 'jellybeans', -- for solarized solarized_dark
-	section_separators = {'', ''},
-	component_separators = {'', ''},
     disabled_filetypes = {}
   },
 
