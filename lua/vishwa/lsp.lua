@@ -72,6 +72,15 @@ local on_attach = function(client, bufnr)
   }
 end
 
+require'lspinstall'.setup()
+local servers=require'lspinstall'.installed_servers()
+table.insert(servers, "pyright")
+for _, server in pairs(servers) do
+	nvim_lsp[server].setup{
+		on_attach=on_attach,
+	}
+end
+
 nvim_lsp.pyright.setup{
 	on_attach=on_attach
 }

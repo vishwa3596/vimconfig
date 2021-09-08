@@ -1,13 +1,12 @@
 require'lualine'.setup {
   options = {
     icons_enabled = true,
-    theme = 'jellybeans', -- for solarized solarized_dark
+    theme = 'solarized_dark', -- for solarized solarized_dark
     disabled_filetypes = {}
   },
 
   sections = {
     lualine_a = {'mode'},
-    lualine_b = {'g:coc_status', 'bo:filetype'},
     lualine_c = {'filename'},
     lualine_x = {'encoding', 'fileformat', 'filetype'},
     lualine_y = {'progress'},
@@ -24,9 +23,4 @@ require'lualine'.setup {
   tabline = {},
   extensions = {}
 }
-
-local function ins_left(component)
-  table.insert(config.sections.lualine_c, component)
-end
-
 
